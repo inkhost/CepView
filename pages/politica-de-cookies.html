@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Política de Cookies — CepView</title>
+<meta name="description" content="Como o CepView usa cookies e armazenamento local." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="brand" style="text-decoration:none;">
+        <div class="brand__icon">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <span class="brand__name">CepView</span>
+      </a>
+
+      <nav class="header__nav" id="header-nav">
+        <a href="../index.html">Início</a>
+        <a href="contato.html">Contato</a>
+        <a href="quem-somos.html">Quem somos</a>
+        <a href="termos-de-servico.html">Termos de Serviço</a>
+        <a href="politica-de-privacidade.html">Política de Privacidade</a>
+        <a href="politica-de-cookies.html" aria-current="page">Política de Cookies</a>
+      </nav>
+
+      <div class="header__right">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema claro/escuro">
+          <span class="theme-toggle__knob" id="theme-knob"></span>
+        </button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="page">
+      <p class="page__eyebrow">Legal</p>
+      <h1>Política de Cookies</h1>
+      <p class="page__updated">Última atualização: agosto de 2026</p>
+
+      <div class="page__card">
+        <h2>1. O que usamos</h2>
+        <p>
+          O CepView não utiliza cookies de rastreamento ou de publicidade. Usamos apenas o
+          <em>armazenamento local</em> do seu navegador (localStorage), um recurso semelhante a um
+          cookie, para lembrar sua preferência de tema (claro ou escuro) entre uma visita e outra.
+        </p>
+
+        <h2>2. Por que usamos</h2>
+        <ul>
+          <li>Lembrar se você prefere o modo claro ou o modo escuro.</li>
+          <li>Evitar que você precise ajustar o tema toda vez que visitar o site.</li>
+        </ul>
+
+        <h2>3. Cookies de terceiros</h2>
+        <p>
+          Duas ferramentas de terceiros usadas no site podem definir seus próprios cookies ou
+          armazenamento local, fora do nosso controle: o VLibras, do Governo Federal, que oferece
+          tradução em Libras, e a fonte Inter, carregada a partir do Google Fonts.
+        </p>
+
+        <h2>4. Como limpar esses dados</h2>
+        <p>
+          Você pode apagar a preferência de tema a qualquer momento limpando os dados de navegação
+          (cookies e dados de sites) do seu navegador para o domínio do CepView.
+        </p>
+
+        <h2>5. Alterações nesta política</h2>
+        <p>
+          Se um dia passarmos a usar cookies de terceiros para outras finalidades, atualizaremos
+          esta página com as informações correspondentes.
+        </p>
+
+        <h2>6. Contato</h2>
+        <p>
+          Dúvidas sobre cookies podem ser enviadas pela nossa
+          <a class="inline-link" href="contato.html">página de contato</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <nav class="footer__nav">
+      <a href="../index.html">Início</a>
+      <a href="contato.html">Contato</a>
+      <a href="quem-somos.html">Quem somos</a>
+      <a href="termos-de-servico.html">Termos de Serviço</a>
+      <a href="politica-de-privacidade.html">Política de Privacidade</a>
+      <a href="politica-de-cookies.html">Política de Cookies</a>
+    </nav>
+    <p>Desenvolvido por CepView</p>
+  </footer>
+
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

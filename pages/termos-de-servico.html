@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Termos de Serviço — CepView</title>
+<meta name="description" content="Termos de uso do CepView." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="brand" style="text-decoration:none;">
+        <div class="brand__icon">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <span class="brand__name">CepView</span>
+      </a>
+
+      <nav class="header__nav" id="header-nav">
+        <a href="../index.html">Início</a>
+        <a href="contato.html">Contato</a>
+        <a href="quem-somos.html">Quem somos</a>
+        <a href="termos-de-servico.html" aria-current="page">Termos de Serviço</a>
+        <a href="politica-de-privacidade.html">Política de Privacidade</a>
+        <a href="politica-de-cookies.html">Política de Cookies</a>
+      </nav>
+
+      <div class="header__right">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema claro/escuro">
+          <span class="theme-toggle__knob" id="theme-knob"></span>
+        </button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="page">
+      <p class="page__eyebrow">Legal</p>
+      <h1>Termos de Serviço</h1>
+      <p class="page__updated">Última atualização: agosto de 2026</p>
+
+      <div class="page__card">
+        <h2>1. Aceitação dos termos</h2>
+        <p>
+          Ao acessar e usar o CepView, você concorda com estes Termos de Serviço. Se você não
+          concordar com qualquer parte destes termos, pedimos que não utilize o site.
+        </p>
+
+        <h2>2. O que o CepView faz</h2>
+        <p>
+          O CepView é uma ferramenta gratuita de consulta de endereços brasileiros, que permite
+          buscar um endereço a partir de um CEP e, de forma inversa, encontrar o CEP a partir de
+          uma rua, cidade e estado. Os dados exibidos são obtidos de uma API pública de terceiros
+          (ViaCEP), com base nas informações oficiais dos Correios.
+        </p>
+
+        <h2>3. Uso permitido</h2>
+        <ul>
+          <li>Utilizar o site para consultas pessoais, acadêmicas ou profissionais legítimas.</li>
+          <li>Não utilizar o site para automatizar consultas em massa que sobrecarreguem o serviço.</li>
+          <li>Não tentar copiar, modificar ou explorar indevidamente o código-fonte do site.</li>
+        </ul>
+
+        <h2>4. Precisão das informações</h2>
+        <p>
+          Fazemos o possível para exibir informações corretas, mas não garantimos que os dados de
+          CEP, rua, bairro, cidade ou estado estejam sempre 100% atualizados, já que dependemos de
+          uma base de dados de terceiros. Recomendamos confirmar informações críticas diretamente
+          com os Correios quando necessário.
+        </p>
+
+        <h2>5. Limitação de responsabilidade</h2>
+        <p>
+          O CepView não se responsabiliza por eventuais prejuízos decorrentes do uso incorreto das
+          informações fornecidas pelo site, incluindo erros de digitação, indisponibilidade
+          temporária do serviço ou dados desatualizados na base de origem.
+        </p>
+
+        <h2>6. Alterações nestes termos</h2>
+        <p>
+          Estes termos podem ser atualizados periodicamente. Recomendamos revisitar esta página de
+          tempos em tempos para acompanhar eventuais mudanças.
+        </p>
+
+        <h2>7. Contato</h2>
+        <p>
+          Dúvidas sobre estes termos podem ser enviadas pela nossa
+          <a class="inline-link" href="contato.html">página de contato</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <nav class="footer__nav">
+      <a href="../index.html">Início</a>
+      <a href="contato.html">Contato</a>
+      <a href="quem-somos.html">Quem somos</a>
+      <a href="termos-de-servico.html">Termos de Serviço</a>
+      <a href="politica-de-privacidade.html">Política de Privacidade</a>
+      <a href="politica-de-cookies.html">Política de Cookies</a>
+    </nav>
+    <p>Desenvolvido por CepView</p>
+  </footer>
+
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
