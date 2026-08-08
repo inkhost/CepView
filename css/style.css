@@ -520,11 +520,11 @@ a { color: inherit; }
     flex-direction: column;
     gap: 2px;
     background: var(--bg);
-    border-bottom: 1px solid var(--border);
-    padding: 10px 20px 16px;
+    border-bottom: 1px solid transparent;
+    padding: 0 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 220ms ease, padding 220ms ease;
+    transition: max-height 220ms ease, padding 220ms ease, border-color 220ms ease;
   }
 
   .header__nav a {
@@ -537,6 +537,8 @@ a { color: inherit; }
 
   .header__nav.header__nav--open {
     max-height: 420px;
+    padding: 10px 20px 16px;
+    border-bottom-color: var(--border);
   }
 
   .menu-toggle { display: flex; }
